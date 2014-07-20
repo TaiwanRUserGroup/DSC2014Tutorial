@@ -7,3 +7,7 @@ Author: Taiwan R User Group
 Maintainer: Wush Wu <wush978@gmail.com>
 Description: 
 License: 
+Depends:
+  RSelenium,
+  xts,
+  stringr
