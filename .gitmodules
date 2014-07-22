@@ -1,3 +1,6 @@
 [submodule "inst/Basic/slides"]
 	path = inst/Basic/slides
 	url = https://github.com/dboyliao/MLDM_RBasic.git
+[submodule "inst/ETL/slides"]
+	path = inst/ETL/slides
+	url = https://github.com/ntuaha/R_ETL_LAB.git
