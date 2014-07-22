@@ -1,0 +1,3 @@
+[submodule "inst/Basic/slides"]
+	path = inst/Basic/slides
+	url = https://github.com/dboyliao/MLDM_RBasic.git
