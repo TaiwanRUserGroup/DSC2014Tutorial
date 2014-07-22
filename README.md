@@ -5,6 +5,13 @@ library(devtools)
 install_github("DSC2014Tutorial", "TaiwanRUserGroup")
 ```
 
+# 投影片
+
+```r
+slides("Basic")
+slides("ETL")
+```
+
 # 資料
 
 - `cl_info_other` 
