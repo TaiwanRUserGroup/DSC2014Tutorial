@@ -7,7 +7,7 @@ install_github("DSC2014Tutorial", "TaiwanRUserGroup")
 
 # 資料
 
-- `cl\_info\_other` 
+- `cl_info_other` 
     - 可以直接使用`data(cl_info_other`載入data.frame
     - 可以使用`system.file("Basic/cl_info_other.csv", packages="DSC2014Tutorial")`來access .csv原始檔
 
