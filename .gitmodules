@@ -4,3 +4,6 @@
 [submodule "inst/ETL/slides"]
 	path = inst/ETL/slides
 	url = https://github.com/ntuaha/R_ETL_LAB.git
+[submodule "inst/Visualization/slide2"]
+	path = inst/Visualization/slide2
+	url = https://github.com/everdark/lecture_ggplot.git
