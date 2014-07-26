@@ -8,6 +8,7 @@ Maintainer: Wush Wu <wush978@gmail.com>
 Description: 
 License: 
 Depends:
+    RCurl,
     RSelenium,
     xts,
     stringr
