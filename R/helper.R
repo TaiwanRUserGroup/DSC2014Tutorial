@@ -1,3 +1,8 @@
+#'@export
+ETL_file <- function(fname) {
+  get_file(sprintf("ETL/%s", fname))
+}
+
 get_file <- function(path) {
   system.file(path, package = "DSC2014Tutorial")
 }
