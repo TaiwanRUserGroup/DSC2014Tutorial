@@ -1,6 +1,6 @@
 # 安裝說明
 
-## Windows
+請在R console貼上下列script:
 
 ```r
 deps <- available.packages("http://54.92.61.128/R")[1,"Depends"]
@@ -9,12 +9,6 @@ for(pkg in pkgs) {
   install.packages(pkg)
 }
 install.packages('DSC2014Tutorial', repo = 'http://54.92.61.128/R', type = 'source')
-```
-
-## Others
-
-```r
-install.packages('DSC2014Tutorial', repo = c('http://54.92.61.128/R', 'http://cran.csie.ntu.edu.tw'), type = 'source')
 ```
 
 # 投影片
