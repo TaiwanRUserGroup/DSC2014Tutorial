@@ -3,13 +3,13 @@
 請在R console貼上下列script:
 
 ```r
-deps <- available.packages("http://54.92.61.128/R")[1,"Depends"]
+deps <- available.packages("http://taiwanrusergroup.github.io/R")[1,"Depends"]
 pkgs <- strsplit(gsub("\\s", "", deps), ",")[[1]]
 for(pkg in pkgs) {
   # You can change your favorite repository
   install.packages(pkg, repo = "http://cran.csie.ntu.edu.tw")
 }
-install.packages('DSC2014Tutorial', repo = 'http://54.92.61.128/R', type = 'source')
+install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
 ```
 
 # 投影片
