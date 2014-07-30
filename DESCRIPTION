@@ -8,7 +8,8 @@ Maintainer: Wush Wu <wush978@gmail.com>
 Description: This package contains the required materials of R Tutorial DSC2014
 License: GPL (>= 3)
 Depends:
-    R (>= 3.1.0),
+    R (>= 3.1.0)
+Imports:
     RCurl,
     RSelenium,
     xts,
