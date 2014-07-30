@@ -7,3 +7,6 @@
 [submodule "inst/Visualization/slide2"]
 	path = inst/Visualization/slide2
 	url = https://github.com/everdark/lecture_ggplot.git
+[submodule "inst/Visualization/slide1"]
+	path = inst/Visualization/slide1
+	url = https://github.com/KuiMing/graphics.git
