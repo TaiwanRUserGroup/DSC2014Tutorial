@@ -3,8 +3,24 @@ ETL_file <- function(fname) {
   get_file(sprintf("ETL/%s", fname))
 }
 
-get_file <- function(path) {
-  system.file(path, package = "DSC2014Tutorial")
+get_os_suffix <- function() {
+  switch(Sys.info()["sysname"], 
+         "Linux" = "unix",
+         "Darwin" = "unix",
+         "Windows" = "windows",
+         stop("Not supported system")
+  )
+}
+
+#'@importFrom tools file_ext
+get_file <- function(path, recursive = TRUE) {
+  origin.output <- system.file(path, package = "DSC2014Tutorial")
+  if (origin.output == "" & recursive) {             
+    origin.output <- get_file(sprintf("%s.%s", 
+            paste(substring(path, 1, nchar(path) - nchar(ext <- file_ext(path)) - 1), get_os_suffix(), sep="_"),
+            ext), FALSE)
+  }
+  origin.output
 }
 
 get_uri <- function(path) {
