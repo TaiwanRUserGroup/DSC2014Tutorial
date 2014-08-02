@@ -1,4 +1,0 @@
-echo "This is unix-like system"
-echo "Copying data ecoded with UTF-8"
-mkdir data
-xcopy inst\data\windows\* data\
