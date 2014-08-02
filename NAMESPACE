@@ -2,4 +2,5 @@
 
 export(ETL_file)
 export(slides)
+importFrom(tools,file_ext)
 importFrom(utils,browseURL)

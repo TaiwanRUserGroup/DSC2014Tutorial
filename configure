@@ -1,0 +1,4 @@
+echo "This is unix-like system"
+echo "Copying data ecoded with UTF-8"
+mkdir -p data
+cp inst/data/unix/* data/

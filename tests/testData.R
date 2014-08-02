@@ -1,0 +1,1 @@
+data(salary, package="DSC2014Tutorial")
