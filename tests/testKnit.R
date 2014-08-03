@@ -4,5 +4,5 @@ slides <- system.file(slides, package="DSC2014Tutorial")
 stopifnot(slides != "")
 out.file <- list()
 for(slide in slides) {
-  knit(slide, out.file[[slide]] <- tempfile(fileext = ".md"))
+  knit(slide, out.file[[slide]] <- tempfile(fileext = ".md"), encoding="UTF-8")
 }
