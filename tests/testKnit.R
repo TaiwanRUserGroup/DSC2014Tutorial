@@ -4,5 +4,13 @@ slides <- system.file(slides, package="DSC2014Tutorial")
 stopifnot(slides != "")
 out.file <- list()
 for(slide in slides) {
-  knit(slide, out.file[[slide]] <- tempfile(fileext = ".md"), encoding="UTF-8")
+  print(slide)
+  if (Sys.info()['sysname'] == "Windows") {
+    src <- readLines(file(slide, encoding="UTF-8"))
+    write(src, dst <- sprintf("%s/index.Rmd", tempdir()))
+    knit(dst, out.file[[slide]] <- tempfile(fileext = ".md"))    
+  } else {
+    knit(slide, out.file[[slide]] <- tempfile(fileext = ".md"), encoding="UTF-8")
+  }
+  warnings()
 }
