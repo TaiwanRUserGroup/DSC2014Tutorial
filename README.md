@@ -24,13 +24,14 @@ install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R'
 
 ## Mac
 
-由於我們無法編譯Mac Binary, 只好請Mac User執行以下的Script:
+請Mac User執行以下的Script:
 
 ```r
-deps <- available.packages("http://taiwanrusergroup.github.io/R")[1,"Depends"]
+deps <- available.packages("http://taiwanrusergroup.github.io/R/src/contrib")[1,"Imports"]
 pkgs <- strsplit(gsub("\\s", "", deps), ",")[[1]]
-for(pkg in pkgs) {
+for(i in seq_along(pkgs)) {
   # You can change your favorite repository
+  if (require(pkg, character.only = TRUE)) next
   install.packages(pkg, repo = "http://cran.csie.ntu.edu.tw")
 }
 install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
