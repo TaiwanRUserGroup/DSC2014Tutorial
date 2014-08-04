@@ -8,7 +8,9 @@ for(slide in slides) {
   if (Sys.info()['sysname'] == "Windows") {
     src <- readLines(file(slide, encoding="UTF-8"))
     write(src, dst <- sprintf("%s/index.Rmd", tempdir()))
-    knit(dst, out.file[[slide]] <- tempfile(fileext = ".md"))    
+    tryCatch(knit(dst, out.file[[slide]] <- tempfile(fileext = ".md")), 
+      warning = function(w) stop(conditionMessage(w))
+    )
   } else {
     knit(slide, out.file[[slide]] <- tempfile(fileext = ".md"), encoding="UTF-8")
   }
