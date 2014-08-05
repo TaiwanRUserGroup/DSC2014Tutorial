@@ -1,12 +1,37 @@
 # 安裝說明
 
-請在R console貼上下列script:
+請依據不同的OS在R console貼上下列script:
+
+## Windows
 
 ```r
-deps <- available.packages("http://taiwanrusergroup.github.io/R")[1,"Depends"]
+install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'win.binary')
+```
+
+## Ubuntu
+
+請先安裝以下Ubuntu套件:
+
+```
+sudo apt-get install libcurl4-openssl-dev
+```
+
+再在R底下執行
+
+```r
+install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
+```
+
+## Mac
+
+請Mac User執行以下的Script:
+
+```r
+deps <- available.packages("http://taiwanrusergroup.github.io/R/src/contrib")[1,"Imports"]
 pkgs <- strsplit(gsub("\\s", "", deps), ",")[[1]]
-for(pkg in pkgs) {
+for(i in seq_along(pkgs)) {
   # You can change your favorite repository
+  if (require(pkg, character.only = TRUE)) next
   install.packages(pkg, repo = "http://cran.csie.ntu.edu.tw")
 }
 install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
@@ -18,15 +43,3 @@ install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R'
 slides("Basic")
 slides("ETL")
 ```
-
-# 資料
-
-- `cl_info_other` 
-    - 可以直接使用`data(cl_info_other`載入data.frame
-    - 可以使用`system.file("Basic/cl_info_other.csv", packages="DSC2014Tutorial")`來access .csv原始檔
-
-# 範例
-
-## R Basic
-
-- 練習1, `system.file("Basic/exercise1.R", packages="DSC2014Tutorial")`
