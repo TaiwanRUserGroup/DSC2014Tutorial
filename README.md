@@ -13,7 +13,7 @@ install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R'
 請先安裝以下Ubuntu套件:
 
 ```
-sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install libcurl4-openssl-dev libxml2-dev
 ```
 
 再在R底下執行
