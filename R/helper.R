@@ -3,6 +3,11 @@ ETL_file <- function(fname) {
   get_file(sprintf("ETL/%s", fname))
 }
 
+#'@export
+DA_file <- function(fname) {
+  get_file(sprintf("DataAnalysis/%s", fname))
+}
+
 get_os_suffix <- function() {
   switch(Sys.info()["sysname"], 
          "Linux" = "unix",
