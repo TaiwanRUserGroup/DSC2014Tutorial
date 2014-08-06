@@ -31,8 +31,8 @@ deps <- available.packages("http://taiwanrusergroup.github.io/R/src/contrib")[1,
 pkgs <- strsplit(gsub("\\s", "", deps), ",")[[1]]
 for(i in seq_along(pkgs)) {
   # You can change your favorite repository
-  if (require(pkg, character.only = TRUE)) next
-  install.packages(pkg, repo = "http://cran.csie.ntu.edu.tw")
+  if (require(pkgs[i], character.only = TRUE)) next
+  install.packages(pkgs[i], repo = "http://cran.csie.ntu.edu.tw")
 }
 install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
 ```

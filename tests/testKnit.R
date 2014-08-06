@@ -11,7 +11,7 @@ for(slide in slides) {
     write(src, dst <- sprintf("%s/index.Rmd", tempdir()))
     knitr::knit(dst, out.file[[slide]] <- tempfile(fileext = ".md"))
   } else {
-    knit(slide, out.file[[slide]] <- tempfile(fileext = ".md"), encoding="UTF-8")
+    knitr::knit(slide, out.file[[slide]] <- tempfile(fileext = ".md"), encoding="UTF-8")
   }
   warnings()
 }
