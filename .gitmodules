@@ -13,3 +13,6 @@
 [submodule "inst/Visualization/slide3"]
 	path = inst/Visualization/slide3
 	url = https://github.com/mansunkuo/rmd_tutorial
+[submodule "inst/DataAnalysis/slide"]
+	path = inst/DataAnalysis/slide
+	url = https://github.com/whizzalan/R-tutorial_DataAnalysis
