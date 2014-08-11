@@ -5,7 +5,7 @@
 ## Windows
 
 ```r
-install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'win.binary')
+install.packages('DSC2014Tutorial', repo = c('http://taiwanrusergroup.github.io/R', "http://cran.csie.ntu.edu.tw"), type = 'win.binary')
 ```
 
 ## Ubuntu
@@ -19,7 +19,7 @@ sudo apt-get install libcurl4-openssl-dev libxml2-dev
 再在R底下執行
 
 ```r
-install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
+install.packages('DSC2014Tutorial', repo = c('http://taiwanrusergroup.github.io/R', "http://cran.csie.ntu.edu.tw"), type = 'source')
 ```
 
 ## Mac
