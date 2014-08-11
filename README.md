@@ -1,6 +1,6 @@
 # 安裝說明
 
-請依據不同的OS在R console貼上下列script:
+請依據不同的OS在R console貼上下列script。如果有錯誤訊息，請參考最後的Q&A
 
 ## Windows
 
@@ -36,6 +36,12 @@ for(i in seq_along(pkgs)) {
 }
 install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
 ```
+
+## Q&A
+
+- `ERROR: dependencies ‘wordcloud’, ‘gridExtra’ are not available for package ‘DSC2014Tutorial’`
+    - 請貼上MAC上安裝套件的script，應可安裝所有相依套件。
+    - 如果錯誤訊息依舊，應是某個套件安裝失敗。請將錯誤訊息回報至<https://github.com/TaiwanRUserGroup/DSC2014Tutorial/issues>
 
 # 投影片
 
