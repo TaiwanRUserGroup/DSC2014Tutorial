@@ -46,6 +46,7 @@ install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R'
 # 投影片
 
 ```r
+library(DSC2014Tutorial)
 slides("Basic")
 slides("ETL")
 slides("Visualization2")
