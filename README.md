@@ -52,6 +52,7 @@ install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R'
 #### windows
 
 [參考資料](http://www.r-statistics.com/2014/07/r-3-1-1-is-released-and-how-to-quickly-update-it-on-windows-os/)
+
 在R console鍵入
 ```{r}
 install.packages("installr"); require(installr) 
