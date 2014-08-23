@@ -27,7 +27,8 @@ Imports:
     rpart,
     rpart.plot,
     mgcv,
-    data.table
+    data.table,
+    sqldf
 Suggests:
     whisker,
     ggvis
