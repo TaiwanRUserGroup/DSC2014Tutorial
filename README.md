@@ -1,7 +1,8 @@
 # 安裝說明
 
 1. 請執行`R.version`檢查R 的版本。本次課程中需要3.1版本以上的R。如果是3.0的版本，安裝時會看到`package ‘DSC2014Tutorial’ is not available (for R version 3.0.2)`。升級方式請見下面的[更新方式](#upgrade)
-2. 請依據不同的OS在R console貼上下列script。如果有錯誤訊息，請參考最後的Q&A
+2. 請依據不同的OS在R console貼上下列script。如果有錯誤訊息，請參考以下的Q&A
+3. 有些講師投影片中的套件，在課程中用得較少。我們將這類套件放到Suggests之中。如果學員想要安裝這類套件好執行程式碼，請參考以下的[Suggests安裝指南](#suggests)
 
 ## Windows
 
@@ -100,4 +101,16 @@ slides("Visualization2")
 slides("Visualization3")
 ```
 
+# <a name="suggests"/>安裝Suggests
 
+請執行以下的程式碼
+
+```
+deps <- available.packages("http://taiwanrusergroup.github.io/R/src/contrib")[1,"Suggests"]
+pkgs <- strsplit(gsub("\\s", "", deps), ",")[[1]]
+for(i in seq_along(pkgs)) {
+  # You can change your favorite repository
+  if (require(pkgs[i], character.only = TRUE)) next
+  install.packages(pkgs[i], repo = "http://cran.csie.ntu.edu.tw")
+}
+```
