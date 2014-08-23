@@ -13,6 +13,11 @@ Basic_file <- function(fname) {
   get_file(sprintf("Basic/%s", fname))  
 }
 
+#'@export
+Vis_file <- function(fname) {
+  get_file(sprintf("Visualization/%s", fname))
+}
+
 get_os_suffix <- function() {
   switch(Sys.info()["sysname"], 
          "Linux" = "unix",

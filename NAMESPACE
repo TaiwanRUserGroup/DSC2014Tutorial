@@ -3,6 +3,7 @@
 export(Basic_file)
 export(DA_file)
 export(ETL_file)
+export(Vis_file)
 export(slides)
 importFrom(tools,file_ext)
 importFrom(utils,browseURL)
