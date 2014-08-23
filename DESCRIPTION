@@ -27,3 +27,6 @@ Imports:
     rpart,
     rpart.plot,
     mgcv
+Suggests:
+    whisker,
+    ggvis

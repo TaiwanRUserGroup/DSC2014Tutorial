@@ -8,6 +8,11 @@ DA_file <- function(fname) {
   get_file(sprintf("DataAnalysis/%s", fname))
 }
 
+#'@export
+Basic_file <- function(fname) {
+  get_file(sprintf("Basic/%s", fname))  
+}
+
 get_os_suffix <- function() {
   switch(Sys.info()["sysname"], 
          "Linux" = "unix",
