@@ -28,7 +28,10 @@ Imports:
     rpart.plot,
     mgcv,
     data.table,
-    sqldf
+    sqldf,
 Suggests:
     whisker,
-    ggvis
+    ggvis,
+    e1071,
+    caret,
+    randomForest
