@@ -29,9 +29,9 @@ Imports:
     mgcv,
     data.table,
     sqldf,
+Suggests:
+    whisker,
+    ggvis,
     e1071,
     caret,
     randomForest
-Suggests:
-    whisker,
-    ggvis
