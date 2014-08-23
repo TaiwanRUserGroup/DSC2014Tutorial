@@ -13,3 +13,6 @@
 [submodule "inst/DataAnalysis/slides"]
 	path = inst/DataAnalysis/slides
 	url = https://github.com/whizzalan/R-tutorial_DataAnalysis
+[submodule "inst/Basic/slides"]
+	path = inst/Basic/slides
+	url = https://github.com/dboyliao/RBasic_Revised.git
