@@ -26,4 +26,5 @@ Imports:
     gridExtra,
     rpart,
     rpart.plot,
-    mgcv
+    mgcv,
+    whisker
