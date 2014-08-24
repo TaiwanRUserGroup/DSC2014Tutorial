@@ -47,7 +47,8 @@ get_uri <- function(path) {
 slides <- function(talk_id) {
   slides_url <- switch(as.character(talk_id), 
     Basic = get_uri("Basic/slides/index.html"),
-    ETL = get_uri("ETL/slides/index.html"),
+    ETL1 = get_uri("ETL/slide1/index.html"),
+    ETL2 = get_url("ETL/slide2/index.html"),
     DataAnalysis = get_uri("DataAnalysis/slides/index.html"),
     Visualization1 = get_uri("Visualization/slide1/index.html"),
     Visualization2 = get_uri("Visualization/slide2/lecture_ggplot2/index.html"),

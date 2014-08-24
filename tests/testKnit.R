@@ -1,5 +1,5 @@
 if (Sys.info()['sysname'] == "Windows") Sys.setlocale(locale="Chinese (Traditional)_Taiwan.950")
-slides <- c("Basic/slides/index.Rmd", "ETL/slides/index.Rmd", "Visualization/slide1/index.Rmd", "Visualization//slide2/lecture_ggplot2/index.Rmd", "Visualization/slide3/index.Rmd")
+slides <- c("Basic/slides/index.Rmd", "ETL/slide1/index.Rmd", "ETL/slide2/index.Rmd", "Visualization/slide1/index.Rmd", "Visualization//slide2/lecture_ggplot2/index.Rmd", "Visualization/slide3/index.Rmd")
 slides <- system.file(slides, package="DSC2014Tutorial")
 stopifnot(slides != "")
 out.file <- list()

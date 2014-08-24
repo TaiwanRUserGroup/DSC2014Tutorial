@@ -96,7 +96,8 @@ sudo apt-get install r-base
 ```r
 library(DSC2014Tutorial)
 slides("Basic")
-slides("ETL")
+slides("ETL1")
+slides("ETL2")
 slides("DataAnalysis")
 slides("Visualization1")
 slides("Visualization2")
