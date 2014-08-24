@@ -47,6 +47,7 @@ install.packages('DSC2014Tutorial', repo = 'http://taiwanrusergroup.github.io/R'
 - `package ‘DSC2014Tutorial’ is not available (for R version 3.0.2)`
     - 請更新R到3.1以上的版本。
 
+
 ### <a name="upgrade"></a>更新方式
 #### Mac
 請至 http://cran.r-project.org/bin/macosx/ 下載
@@ -97,6 +98,7 @@ library(DSC2014Tutorial)
 slides("Basic")
 slides("ETL")
 slides("DataAnalysis")
+slides("Visualization1")
 slides("Visualization2")
 slides("Visualization3")
 ```
