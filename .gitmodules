@@ -16,3 +16,9 @@
 [submodule "inst/Basic/slides"]
 	path = inst/Basic/slides
 	url = https://github.com/dboyliao/RBasic_Revised.git
+[submodule "inst/ETL/slide1"]
+	path = inst/ETL/slide1
+	url = https://github.com/ntuaha/R_ETL_LAB.git
+[submodule "inst/ETL/slide2"]
+	path = inst/ETL/slide2
+	url = https://github.com/ntuaha/R_ETL_JIAWEI.git
