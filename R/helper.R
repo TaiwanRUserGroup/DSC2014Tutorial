@@ -3,6 +3,21 @@ ETL_file <- function(fname) {
   get_file(sprintf("ETL/%s", fname))
 }
 
+#'@export
+DA_file <- function(fname) {
+  get_file(sprintf("DataAnalysis/%s", fname))
+}
+
+#'@export
+Basic_file <- function(fname) {
+  get_file(sprintf("Basic/%s", fname))  
+}
+
+#'@export
+Vis_file <- function(fname) {
+  get_file(sprintf("Visualization/%s", fname))
+}
+
 get_os_suffix <- function() {
   switch(Sys.info()["sysname"], 
          "Linux" = "unix",
@@ -32,9 +47,12 @@ get_uri <- function(path) {
 slides <- function(talk_id) {
   slides_url <- switch(as.character(talk_id), 
     Basic = get_uri("Basic/slides/index.html"),
-    ETL = get_uri("ETL/slides/index.html"),
+    ETL1 = get_uri("ETL/slide1/index.html"),
+    ETL2 = get_uri("ETL/slide2/index.html"),
     DataAnalysis = get_uri("DataAnalysis/slides/index.html"),
-    Visualization2 = get_uri("Visualization/slide2/lecture_ggplot2/index.html")
+    Visualization1 = get_uri("Visualization/slide1/index.html"),
+    Visualization2 = get_uri("Visualization/slide2/lecture_ggplot2/index.html"),
+    Visualization3 = get_uri("Visualization/slide3/index.html")
   )
   utils::browseURL(slides_url)
 }

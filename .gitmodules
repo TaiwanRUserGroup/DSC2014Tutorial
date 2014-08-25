@@ -1,9 +1,3 @@
-[submodule "inst/Basic/slides"]
-	path = inst/Basic/slides
-	url = https://github.com/dboyliao/MLDM_RBasic.git
-[submodule "inst/ETL/slides"]
-	path = inst/ETL/slides
-	url = https://github.com/ntuaha/R_ETL.git
 [submodule "inst/Visualization/slide2"]
 	path = inst/Visualization/slide2
 	url = https://github.com/everdark/lecture_ggplot.git
@@ -13,3 +7,15 @@
 [submodule "inst/Visualization/slide3"]
 	path = inst/Visualization/slide3
 	url = https://github.com/mansunkuo/rmd_tutorial
+[submodule "inst/DataAnalysis/slides"]
+	path = inst/DataAnalysis/slides
+	url = https://github.com/whizzalan/R-tutorial_DataAnalysis
+[submodule "inst/Basic/slides"]
+	path = inst/Basic/slides
+	url = https://github.com/dboyliao/RBasic_Revised.git
+[submodule "inst/ETL/slide1"]
+	path = inst/ETL/slide1
+	url = https://github.com/ntuaha/R_ETL_LAB.git
+[submodule "inst/ETL/slide2"]
+	path = inst/ETL/slide2
+	url = https://github.com/ntuaha/R_ETL_JIAWEI.git
