@@ -18,6 +18,17 @@ Vis_file <- function(fname) {
   get_file(sprintf("Visualization/%s", fname))
 }
 
+#'@export
+getfp <- function(fname, course){
+  switch(course, 
+         "Basic"= Basic_file(fname),
+         "ETL"= ETL_file(fname),
+         "DataAnalysis" = DA_file(fname),
+         "Visualization" = Vis_file(fname)
+         )
+}
+
+
 get_os_suffix <- function() {
   switch(Sys.info()["sysname"], 
          "Linux" = "unix",
